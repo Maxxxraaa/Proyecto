@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo - Portal Filosófico</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #fafafa;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #b22222;
+            padding: 20px 0;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            color: #fff;
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 10px 0;
+            background-color: #b22222;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffe4c4;
+        }
+
+        main {
+            flex: 1;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            font-size: 32px;
+            color: #b22222;
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 30px;
+        }
+
+        .equipo-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 220px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            margin-bottom: 5px;
+            color: #b22222;
+        }
+
+        .card .rol {
+            font-weight: bold;
+            color: #444;
+        }
+
+        .card p {
+            margin: 5px 0;
+            font-size: 15px;
+        }
+
+        footer {
+            background-color: #222;
+            color: #eee;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .equipo-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Historias entre Nosotros</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="guion.html">Obra Literaria</a></li>
+                <li><a href="contexto.html">Contexto Histórico</a></li>
+                <li><a href="podcast.html">Podcast</a></li>
+                <li><a href="acerca.html">Acerca de</a></li>         
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Participaciones de :</h2>
+        <div class="equipo-container">
+            <div class="card">
+                <img src="Roberto.jpg" alt="Roberto Espinoza">
+                <h3>Roberto Espinoza</h3>
+                <p class="rol">Participante Testigo</p>
+            </div>
+            <div class="card">
+                <img src="Max.jpg" alt="Max Ramos">
+                <h3>Max Ramos</h3>
+                <p class="rol">Editor</p>
+                <p>Participante Testigo</p>
+            </div>
+            <div class="card">
+                <img src="Farid.jpg" alt="Farid Ortiz">
+                <h3>Farid Ortiz</h3>
+                <p class="rol">Participante Testigo</p>
+            </div>
+            <div class="card">
+                <img src="Antonio.jpg" alt="Antonio Díaz">
+                <h3>Antonio Díaz</h3>
+                <p class="rol">Host</p>
+            </div>
+            <div class="card">
+                <img src="Alonso.jpg" alt="Alonso Arias">
+                <h3>Alonso Arias</h3>
+                <p class="rol">Host</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Historias entre Nosotros. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

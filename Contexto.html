@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Línea de Tiempo – Milagro Mexicano</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #fafafa;
+            color: #333;
+        }
+
+        header {
+            background-color: #b22222;
+            padding: 15px 0;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            color: #fff;
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 10px 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #ffe4c4;
+        }
+
+        .contenido {
+            max-width: 1000px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .contenido h2 {
+            font-size: 28px;
+            color: #b22222;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .timeline {
+            position: relative;
+            margin: 0 auto;
+            padding: 10px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            width: 4px;
+            height: 100%;
+            background-color: #b22222;
+            transform: translateX(-50%);
+        }
+
+        .timeline-event {
+            position: relative;
+            width: 50%;
+            padding: 20px 30px;
+            box-sizing: border-box;
+        }
+
+        .timeline-event.left {
+            left: 0;
+            text-align: right;
+        }
+
+        .timeline-event.right {
+            left: 50%;
+            text-align: left;
+        }
+
+        .timeline-event::before {
+            content: '';
+            position: absolute;
+            top: 30px;
+            width: 15px;
+            height: 15px;
+            background-color: #b22222;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            z-index: 1;
+        }
+
+        .timeline-event.left::before {
+            right: -8px;
+        }
+
+        .timeline-event.right::before {
+            left: -8px;
+        }
+
+        .timeline-event h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+            color: #b22222;
+        }
+
+        .timeline-event p {
+            background: rgba(178, 34, 34, 0.07);
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #222;
+            color: #eee;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 8px;
+            }
+
+            .timeline-event {
+                width: 100%;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+            .timeline-event.left,
+            .timeline-event.right {
+                left: 0;
+                text-align: left;
+            }
+
+            .timeline-event.left::before,
+            .timeline-event.right::before {
+                left: -8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Historias entre Nosotros</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="guion.html">Obra Literaria</a></li>
+            <li><a href="contexto.html">Contexto Histórico</a></li>
+            <li><a href="podcast.html">Podcast</a></li>
+            <li><a href="acerca.html">Acerca de</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="contenido">
+    <h2>El Milagro Mexicano (1940–1970)</h2>
+
+<div class="timeline">
+
+    <div class="timeline-event left">
+        <h3>1940</h3>
+        <p>Inicio del "Milagro Mexicano" con el presidente Manuel Ávila Camacho. Se promueve la unidad nacional y se establecen bases para la industrialización.</p>
+    </div>
+
+    <div class="timeline-event right">
+        <h3>1942</h3>
+        <p>Se crea el Instituto Mexicano del Seguro Social (IMSS), fortaleciendo la seguridad social y la atención médica pública.</p>
+    </div>
+
+    <div class="timeline-event left">
+        <h3>1946</h3>
+        <p>Miguel Alemán Valdés impulsa la urbanización, la educación técnica y el crecimiento de la infraestructura moderna.</p>
+    </div>
+
+    <div class="timeline-event right">
+        <h3>1950</h3>
+        <p>Se acelera el modelo de Sustitución de Importaciones. México busca producir internamente lo que antes se importaba.</p>
+    </div>
+
+    <div class="timeline-event left">
+        <h3>1952</h3>
+        <p>Adolfo Ruiz Cortines toma la presidencia. Implementa reformas fiscales y promueve la estabilidad económica.</p>
+    </div>
+
+    <div class="timeline-event right">
+        <h3>1954</h3>
+        <p>Se lleva a cabo la devaluación del peso frente al dólar, fijando una paridad de 12.50 pesos por dólar, que se mantendría por años.</p>
+    </div>
+
+    <div class="timeline-event left">
+        <h3>1958</h3>
+        <p>Adolfo López Mateos impulsa la nacionalización de la industria eléctrica, el desarrollo de la clase media y reformas educativas.</p>
+    </div>
+
+    <div class="timeline-event right">
+        <h3>1960</h3>
+        <p>Se nacionalizan las empresas eléctricas. Se expande la red de escuelas y se refuerza la educación pública.</p>
+    </div>
+
+    <div class="timeline-event left">
+        <h3>1964</h3>
+        <p>Gustavo Díaz Ordaz llega a la presidencia. Continúa el crecimiento económico pero aumenta el autoritarismo político.</p>
+    </div>
+
+    <div class="timeline-event right">
+        <h3>1965</h3>
+        <p>Comienza el programa de maquiladoras en la frontera norte con EE.UU., atrayendo inversión extranjera y mano de obra barata.</p>
+    </div>
+
+    <div class="timeline-event left">
+        <h3>1966</h3>
+        <p>Aumentan las tensiones sociales: huelgas de ferrocarrileros, médicos y estudiantes en busca de derechos y democracia.</p>
+    </div>
+
+    <div class="timeline-event right">
+        <h3>1968</h3>
+        <p>Movimiento Estudiantil de 1968. Termina en la masacre de Tlatelolco, mostrando la represión del gobierno frente a la disidencia.</p>
+    </div>
+
+    <div class="timeline-event left">
+        <h3>1970</h3>
+        <p>Final del Milagro Mexicano. Aunque hubo crecimiento económico sostenido, se evidencian desigualdades y problemas estructurales.</p>
+    </div>
+
+
+        </div>
+</section>
+
+<footer>
+    <p>© 2025 Historias entre Nosotros. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
